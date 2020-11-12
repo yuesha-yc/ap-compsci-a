@@ -1,4 +1,4 @@
-package labs.lab1;
+package labs.ppt1;
 
 /**
  * @author Kevin (Yichen Wang)

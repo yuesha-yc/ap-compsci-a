@@ -1,4 +1,4 @@
-package labs.lab3;
+package labs.ppt3.lab1;
 // ***************************************************************
 //   Salary.java
 //   Computes the amount of a raise and the new salary for an

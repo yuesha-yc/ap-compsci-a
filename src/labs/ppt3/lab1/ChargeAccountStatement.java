@@ -1,4 +1,4 @@
-package labs.lab3;
+package labs.ppt3.lab1;
 
 import java.text.NumberFormat;
 import java.util.Scanner;

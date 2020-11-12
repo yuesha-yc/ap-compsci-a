@@ -1,4 +1,4 @@
-package labs.lab2;
+package labs.ppt2;
 
 import java.util.Scanner;
 
