@@ -1,4 +1,4 @@
-package practices;
+package practices.ppt1;
 
 import java.util.Scanner;
 

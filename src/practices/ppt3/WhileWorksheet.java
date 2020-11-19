@@ -1,4 +1,4 @@
-package practices;
+package practices.ppt3;
 
 /**
  * @author Kevin (Yichen Wang)
