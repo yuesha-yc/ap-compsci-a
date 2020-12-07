@@ -9,6 +9,9 @@ package labs.ppt4.lab1;
 // ****************************************************************
 import java.util.Scanner;
 
+/**
+ * AP-CSA Section 1 Kevin Wang
+ */
 public class Student
 {
     //declare instance data

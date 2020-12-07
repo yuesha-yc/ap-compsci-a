@@ -7,6 +7,10 @@ package labs.ppt4.lab1;
 //   and compute averages
 //
 // ****************************************************************
+
+/**
+ * AP-CSA Section 1 Kevin Wang
+ */
 public class Grades
 {
     public static void main(String[] args)
