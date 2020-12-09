@@ -1,8 +1,5 @@
 package labs.ppt4.lab3;
 
-import java.util.Locale;
-import java.util.Objects;
-
 public class Name {
     private String firstName;
     private String midName;
