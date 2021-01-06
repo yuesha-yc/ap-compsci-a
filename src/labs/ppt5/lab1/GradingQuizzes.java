@@ -1,4 +1,4 @@
-package labs.ppt5;
+package labs.ppt5.lab1;
 
 
 /*
