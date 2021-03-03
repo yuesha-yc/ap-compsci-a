@@ -1,7 +1,5 @@
 package cncsa;
 
-import java.util.Scanner;
-
 public class Week11Bonus {
     public static void main(String[] args) {
         a();
@@ -14,7 +12,7 @@ public class Week11Bonus {
         // The row
         for (int i = 0; i <= row; i++) {
             // The column
-            
+
             for (int j = 0; j < i; j++) {
                 System.out.print(" * ");
             }

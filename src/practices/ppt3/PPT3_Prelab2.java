@@ -18,14 +18,13 @@ public class PPT3_Prelab2 {
         int sum = 0;
         int nextVal = 2;
 
-        while (sum < LIMIT)
-        {
+        while (sum < LIMIT) {
             sum = sum + nextVal;
             nextVal = nextVal + 2;
             count = count + 1;
         }
 
-        System.out.println("Had to add together " + (count-1) +
+        System.out.println("Had to add together " + (count - 1) +
                 " even numbers " + "to reach value " + LIMIT + ".  Sum is "
                 + sum);
     }
@@ -39,21 +38,20 @@ public class PPT3_Prelab2 {
     }
 
     public static void q4() {
-        int sum = 0;									//setup
+        int sum = 0;                                    //setup
         String keepGoing = "y";
         int nextVal;
         int count = 0;
 
         Scanner scan = new Scanner(System.in);
 
-        while (keepGoing.equals("y") || keepGoing.equals("Y"))
-        {
-            System.out.print("Enter the next integer: ");		//do work
+        while (keepGoing.equals("y") || keepGoing.equals("Y")) {
+            System.out.print("Enter the next integer: ");        //do work
             nextVal = scan.nextInt();
             sum = sum + nextVal;
             count++; // ADDITION
 
-            System.out.println("Type y or Y to keep going");	//update
+            System.out.println("Type y or Y to keep going");    //update
             keepGoing = scan.next();
         }
 

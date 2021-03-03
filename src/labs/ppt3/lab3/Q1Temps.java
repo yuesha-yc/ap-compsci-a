@@ -18,14 +18,12 @@ import java.util.Scanner;
  * Date Created: 2020/11/16
  * @course AP-CSA Section 1
  */
-public class Q1Temps
-{
+public class Q1Temps {
     //----------------------------------------------------
 //  Reads in a sequence of temperatures and finds the
 //  maximum and minimum read in.
 //----------------------------------------------------
-    public static void main (String[] args)
-    {
+    public static void main(String[] args) {
         final int HOURS_PER_DAY = 4;
 
         int temp;   // a temperature reading
@@ -37,13 +35,12 @@ public class Q1Temps
         Scanner scan = new Scanner(System.in);
 
         // print program heading
-        System.out.println ();
-        System.out.println ("Temperature Readings for 24 Hour"     + " Period");
-        System.out.println ();
+        System.out.println();
+        System.out.println("Temperature Readings for 24 Hour" + " Period");
+        System.out.println();
 
-        for (int hour = 0; hour < HOURS_PER_DAY; hour++)
-        {
-            System.out.print ("Enter the temperature reading at " + hour + " hours: ");
+        for (int hour = 0; hour < HOURS_PER_DAY; hour++) {
+            System.out.print("Enter the temperature reading at " + hour + " hours: ");
             temp = scan.nextInt();
             if (temp > maxTemp) {
                 maxTemp = temp;

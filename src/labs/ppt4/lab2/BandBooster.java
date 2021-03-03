@@ -1,7 +1,7 @@
 package labs.ppt4.lab2;
 
 public class BandBooster {
-    private String name;
+    private final String name;
     private int boxesSold;
 
     public BandBooster(String aName) {

@@ -3,7 +3,7 @@ package labs.ppt5.lab2;
 public class ShoppingCart {
 
     private Item[] cart;
-    private int capacity;
+    private final int capacity;
     private int itemCount;
     private double totalPrice;
 
@@ -23,7 +23,7 @@ public class ShoppingCart {
     }
 
     public void addToCart(Item item) {
-        if (itemCount == cart.length){
+        if (itemCount == cart.length) {
             increaseSize();
         }
         cart[itemCount] = item;

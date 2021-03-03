@@ -23,7 +23,7 @@ public class HI {
             for (int j = 5; j > i; j -= 1) {
                 System.out.print("#");
             }
-            System.out.println("");
+            System.out.println();
         }
 
         for (int i = 0; i < 6; i += 1) {
@@ -33,7 +33,7 @@ public class HI {
             for (int j = 0; j < i; j += 1) {
                 System.out.print("#");
             }
-            System.out.println("");
+            System.out.println();
         }
 
     }

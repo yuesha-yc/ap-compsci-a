@@ -7,8 +7,7 @@ package labs.ppt2;
  * Lab 2 - Area and Circumference of a Circle
  */
 public class Circle2 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         final double PI = 3.14159;
         int radius = 10;
         double area1 = PI * radius * radius;

@@ -27,10 +27,10 @@ public class Q2LoveCS {
         time = scan.nextInt();
 
         while (count <= time) {
-            System.out.println(count+" I love Computer Science!!");
-            sum+=count;
+            System.out.println(count + " I love Computer Science!!");
+            sum += count;
             count++;
         }
-        System.out.println("Printed this message "+(count-1)+" times. The sum of the numbers from 1 to "+(count-1)+" is "+sum+".");
+        System.out.println("Printed this message " + (count - 1) + " times. The sum of the numbers from 1 to " + (count - 1) + " is " + sum + ".");
     }
 }

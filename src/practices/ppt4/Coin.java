@@ -12,7 +12,7 @@ public class Coin {
 
     // Method declaration
     public void flip() { // void is the return type of this method
-        face = (int)(Math.random() * 2); // face will either be one or zero.
+        face = (int) (Math.random() * 2); // face will either be one or zero.
     }
 
     public boolean isHeads() { // boolean is the return type of this method
@@ -23,8 +23,7 @@ public class Coin {
         String faceName; // local variable because it is declared inside a method. Inaccessible outisde.
         if (face == HEADS) {
             faceName = "Heads";
-        }
-        else {
+        } else {
             faceName = "Tails";
         }
         return faceName;

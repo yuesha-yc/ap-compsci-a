@@ -7,10 +7,8 @@ package practices.ppt4;
 //   bank accounts
 // ****************************************************************
 
-public class ManageAccount
-{
-    public static void main(String[] args)
-    {
+public class ManageAccount {
+    public static void main(String[] args) {
         Account acct1, acct2;
 
         //create account1 for Sally with $1000

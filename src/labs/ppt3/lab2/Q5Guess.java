@@ -10,10 +10,10 @@ package labs.ppt3.lab2;
 //   Guess.java
 //   Play a game where the user guesses a number from 1 to 10
 // ****************************************************************
+
 import java.util.Scanner;
 
-public class Q5Guess
-{
+public class Q5Guess {
     public static void main(String[] args) {
         boolean play = true;
         while (play) {
@@ -25,7 +25,7 @@ public class Q5Guess
 
             Scanner scan = new Scanner(System.in);
 
-            numToGuess = (int)(Math.random() * 100) + 1;
+            numToGuess = (int) (Math.random() * 100) + 1;
 
             //print message asking user to enter a guess
             System.out.print("Enter a guess for the number: ");
@@ -47,7 +47,7 @@ public class Q5Guess
                 guess = scan.nextInt();
             }
 
-            System.out.println("");
+            System.out.println();
             System.out.println("=============================");
             System.out.println("Congratulations! ");
             System.out.println("You guessed the correct number within " + count + " guesses. ");
@@ -57,7 +57,7 @@ public class Q5Guess
             String willPlay = scan.next();
             if (!willPlay.equalsIgnoreCase("y")) play = false;
             System.out.println("=============================");
-            System.out.println("");
+            System.out.println();
         }
     }
 }

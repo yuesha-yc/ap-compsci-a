@@ -11,10 +11,8 @@ package labs.ppt4.lab1;
 /**
  * AP-CSA Section 1 Kevin Wang
  */
-public class Grades
-{
-    public static void main(String[] args)
-    {
+public class Grades {
+    public static void main(String[] args) {
         Student student1 = new Student("Mary");
         Student student2 = new Student("Mike");
 

@@ -7,17 +7,15 @@ package practices.ppt4;
 // change the name on, charge a fee to, and print a summary of the account.
 //*******************************************************
 
-public class Account
-{
+public class Account {
     private double balance;
     private String name;
-    private long acctNum;
+    private final long acctNum;
 
     //----------------------------------------------
     //Constructor -- initializes balance, owner, and account number
     //----------------------------------------------
-    public Account(double initBal, String owner, long number)
-    {
+    public Account(double initBal, String owner, long number) {
         balance = initBal;
         name = owner;
         acctNum = number;
@@ -27,8 +25,7 @@ public class Account
     // Checks to see if balance is sufficient for withdrawal.
     // If so, decrements balance by amount; if not, prints message.
     //----------------------------------------------
-    public void withdraw(double amount)
-    {
+    public void withdraw(double amount) {
         if (balance >= amount)
             balance -= amount;
         else
@@ -38,16 +35,14 @@ public class Account
     //----------------------------------------------
     // Adds deposit amount to balance.
     //----------------------------------------------
-    public void deposit(double amount)
-    {
+    public void deposit(double amount) {
         balance += amount;
     }
 
     //----------------------------------------------
     // Returns balance.
     //----------------------------------------------
-    public double getBalance()
-    {
+    public double getBalance() {
         return balance;
     }
 
@@ -55,16 +50,14 @@ public class Account
     //----------------------------------------------
     // Returns a string containing the name, account number, and balance.
     //----------------------------------------------
-    public String toString()
-    {
+    public String toString() {
         return name + " - " + acctNum + " - " + balance;
     }
 
     //----------------------------------------------
     // Deducts $10 service fee
     //----------------------------------------------
-    public double chargeFee()
-    {
+    public double chargeFee() {
         balance -= 10;
         return balance;
     }
@@ -72,8 +65,7 @@ public class Account
     //----------------------------------------------
     // Changes the name on the account
     //----------------------------------------------
-    public void changeName(String newName)
-    {
+    public void changeName(String newName) {
         name = newName;
     }
 

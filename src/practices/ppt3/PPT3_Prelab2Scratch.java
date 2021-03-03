@@ -6,5 +6,5 @@ package practices.ppt3;
  * @course AP-CSA Section 1
  */
 public class PPT3_Prelab2Scratch {
-    
+
 }

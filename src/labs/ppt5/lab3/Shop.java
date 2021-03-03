@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Shop {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayList<Item> cart = new ArrayList<Item>();
 
         Item item;
@@ -26,13 +26,13 @@ public class Shop {
         String keepShopping = "y";
 
         do {
-            System.out.print ("Enter the name of the item: ");
+            System.out.print("Enter the name of the item: ");
             itemName = scan.next();
 
-            System.out.print ("Enter the unit price: ");
+            System.out.print("Enter the unit price: ");
             itemPrice = scan.nextDouble();
 
-            System.out.print ("Enter the quantity: ");
+            System.out.print("Enter the quantity: ");
             quantity = scan.nextInt();
 
             // *** create a new item and add it to the cart
@@ -44,7 +44,7 @@ public class Shop {
                 System.out.println(item1);
             }
 
-            System.out.print ("Continue shopping (y/n)? \n\n");
+            System.out.print("Continue shopping (y/n)? \n\n");
             keepShopping = scan.next();
         }
         while (keepShopping.equals("y"));

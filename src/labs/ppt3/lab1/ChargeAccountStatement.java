@@ -24,8 +24,7 @@ public class ChargeAccountStatement {
         // Calculate interest
         if (previousBalance == 0) {
             interest = 0;
-        }
-        else {
+        } else {
             interest = (previousBalance + additionalCharges) * 0.02;
         }
 
@@ -35,11 +34,9 @@ public class ChargeAccountStatement {
         // Calculate minimum payment
         if (newBalance < 50) {
             minPayment = newBalance;
-        }
-        else if (newBalance <= 300) {
+        } else if (newBalance <= 300) {
             minPayment = 50;
-        }
-        else {
+        } else {
             minPayment = 0.2 * newBalance;
         }
 

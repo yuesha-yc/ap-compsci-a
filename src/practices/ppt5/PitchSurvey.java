@@ -5,17 +5,17 @@ import java.util.Scanner;
 
 public class PitchSurvey {
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
 
         DecimalFormat fmt = new DecimalFormat("0.#");
         Scanner scanner = new Scanner(System.in);
 
         int[][] pitchArray = {
-                {45,105,67},
-                {81,100,93,25,128,88},
-                {45,53},
-                {79,107,53,79},
-                {11,9,3,63,20,18,3}};
+                {45, 105, 67},
+                {81, 100, 93, 25, 128, 88},
+                {45, 53},
+                {79, 107, 53, 79},
+                {11, 9, 3, 63, 20, 18, 3}};
 
         System.out.println("Information:\n");
 
@@ -43,7 +43,7 @@ public class PitchSurvey {
                     "\nSmallest pitch count: " + min +
                     "\nTotal pitch count: " + total +
                     "\nAverage pitch count: " + avg + "\n"
-                    );
+            );
 
         }
 

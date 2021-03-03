@@ -19,10 +19,8 @@ package labs.ppt1;
  * Date Created: ${DATE}
  * Lab1 - Program Names
  */
-public class Simple
-{
-    public static void main (String[] args)
-    {
-        System.out.println ("Java rocks!!");
+public class Simple {
+    public static void main(String[] args) {
+        System.out.println("Java rocks!!");
     }
 }

@@ -1,9 +1,9 @@
 package labs.ppt4.lab3;
 
 public class Name {
-    private String firstName;
-    private String midName;
-    private String lastName;
+    private final String firstName;
+    private final String midName;
+    private final String lastName;
 
     public Name(String first, String middle, String last) {
         firstName = first;
@@ -38,9 +38,9 @@ public class Name {
     }
 
     public String initials() {
-        return firstName.substring(0,1).toUpperCase() +
-                midName.substring(0,1).toUpperCase() +
-                lastName.substring(0,1).toUpperCase();
+        return firstName.substring(0, 1).toUpperCase() +
+                midName.substring(0, 1).toUpperCase() +
+                lastName.substring(0, 1).toUpperCase();
     }
 
     public int length() {

@@ -28,9 +28,9 @@ public class IdealWeight {
         int idealWeightMale = baseMaleWeight + (totalInchHeight - 5 * 12) * maleWeightPerInch;
 
         System.out.println("Your female ideal weight: " + idealWeightFemale + " pounds");
-        System.out.println("Your female ideal weight range: " + idealWeightFemale*0.85 + " pounds" + " - " + idealWeightFemale*1.15 + " pounds");
+        System.out.println("Your female ideal weight range: " + idealWeightFemale * 0.85 + " pounds" + " - " + idealWeightFemale * 1.15 + " pounds");
         System.out.println("Your male ideal weight: " + idealWeightMale + " pounds");
-        System.out.println("Your male ideal weight range: " + idealWeightMale*0.85 + " pounds" + " - " + idealWeightMale*1.15 + " pounds");
+        System.out.println("Your male ideal weight range: " + idealWeightMale * 0.85 + " pounds" + " - " + idealWeightMale * 1.15 + " pounds");
 
     }
 }

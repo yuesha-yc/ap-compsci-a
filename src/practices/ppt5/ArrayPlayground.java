@@ -26,8 +26,5 @@ public class ArrayPlayground {
         System.out.println(haha.indexOf(2));
         haha.clear();
 
-        for (int a : haha) {
-
-        }
     }
 }

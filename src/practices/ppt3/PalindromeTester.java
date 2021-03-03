@@ -5,14 +5,14 @@ package practices.ppt3;
  * Date Created: 2020/11/9
  * @course AP-CSA Section 1
  */
+
 import java.util.Scanner;
 
 public class PalindromeTester {
     //-----------------------------------------------------------------
     //  Tests strings to see if they are palindromes.
     //-----------------------------------------------------------------
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String str, another = "y";
         int left, right;
 
@@ -26,8 +26,7 @@ public class PalindromeTester {
             left = 0;
             right = str.length() - 1;
 
-            while (str.charAt(left) == str.charAt(right) && left < right)
-            {
+            while (str.charAt(left) == str.charAt(right) && left < right) {
                 left++;
                 right--;
             }

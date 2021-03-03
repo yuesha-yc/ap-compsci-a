@@ -12,15 +12,14 @@ package labs.ppt3.lab2;
 //   grade, the number of passing grades (at least 60)
 //   and the number of failing grades.
 // ***************************************************************
+
 import java.util.Scanner;
 
-public class Q1Grades
-{
+public class Q1Grades {
     //---------------------------------------------------------------
     //  Reads in & processes grades until a negative # is entered.
     //---------------------------------------------------------------
-    public static void main (String[] args)
-    {
+    public static void main(String[] args) {
         double grade;  // a student's grade
         double sumOfGrades; // a running total of student grades
         int numStudents; // a count of the students
@@ -29,7 +28,7 @@ public class Q1Grades
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println ("\nGrade Processing Program\n");
+        System.out.println("\nGrade Processing Program\n");
 
         // Initialize summing and counting variables
         sumOfGrades = 0;
@@ -38,13 +37,12 @@ public class Q1Grades
         numFail = 0;
 
         // Read in the first grade
-        System.out.print ("Enter the first student's grade: ");
+        System.out.print("Enter the first student's grade: ");
         grade = scan.nextDouble();
 
 
         // The while loop
-        while (grade >= 0)
-        {
+        while (grade >= 0) {
             sumOfGrades += grade;
             numStudents++;
 
@@ -53,18 +51,16 @@ public class Q1Grades
             else
                 numPass++;
             // Read the next grade
-            System.out.print ("Enter the next grade (a negative " + "to quit): ");
+            System.out.print("Enter the next grade (a negative " + "to quit): ");
             grade = scan.nextDouble();
         }
 
-        if (numStudents > 0)
-        {
-            System.out.println ("\nGrade Summary: ");
-            System.out.println ("Class Average: " + sumOfGrades/numStudents);
-            System.out.println ("Number of Passing Grades: " + numPass);
-            System.out.println ("Number of Failing Grades: " + numFail);
-        }
-        else
-            System.out.println ("No grades processed.");
+        if (numStudents > 0) {
+            System.out.println("\nGrade Summary: ");
+            System.out.println("Class Average: " + sumOfGrades / numStudents);
+            System.out.println("Number of Passing Grades: " + numPass);
+            System.out.println("Number of Failing Grades: " + numFail);
+        } else
+            System.out.println("No grades processed.");
     }
 }

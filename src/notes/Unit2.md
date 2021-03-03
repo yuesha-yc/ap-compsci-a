@@ -6,34 +6,30 @@
 
 `System.out.println("Hello World")`
 
-Call a method called `println` defined in `System` class. 
-To invoke the method, we need to call the object of `System` class, `out`. 
-Then, we input the parameter of `println` defined in `System` class. 
+Call a method called `println` defined in `System` class. To invoke the method, we need to call the object of `System`
+class, `out`. Then, we input the parameter of `println` defined in `System` class.
 
 ### Abstraction
 
-We don't have to think about internal details in order to use an object. 
-Help to write complex programs
+We don't have to think about internal details in order to use an object. Help to write complex programs
 
 ## 2.2 Strings
 
 ### Character Strings
 
-Defined by `String` class. 
-Every literal string delimited by double quotation marks represents a `String` object. 
+Defined by `String` class. Every literal string delimited by double quotation marks represents a `String` object.
 
-The string concatenation operator (+) is used to append one string to the end of another
-It can also be used to append a number to a string
+The string concatenation operator (+) is used to append one string to the end of another It can also be used to append a
+number to a string
 
-A string literal cannot be broken across two lines in a
-program. 
+A string literal cannot be broken across two lines in a program.
 
 ### Escape Sequences
 
-An escape sequence is a series of characters that represents a special character. 
+An escape sequence is a series of characters that represents a special character.
 
-An escape sequence begins with a backslash character (\), which indicates that the character(s) that
-follow should be treated in a special way. 
+An escape sequence begins with a backslash character (\), which indicates that the character(s) that follow should be
+treated in a special way.
 
 `System.out.println ("I said \"Hello\" to you.");`
 
@@ -46,6 +42,5 @@ follow should be treated in a special way.
 * \\ backslash
 
 ## 2.3 Variables
-
 
 ## 2.4 Primitive Data

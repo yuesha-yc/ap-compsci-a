@@ -12,18 +12,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class SquareTest
-{
-    public static void main(String[] args) throws IOException
-    {
+public class SquareTest {
+    public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(new File("/Users/wyc/Documents/0GRADE-12th-AP-KBS/CSA/CSA-Codes/src/labs/ppt5/lab4/magicData.txt"));
 
         int count = 1;                 //count which square we're on
         int size = scan.nextInt();     //size of next square
 
         //Expecting -1 at bottom of input file
-        while (size != -1)
-        {
+        while (size != -1) {
 
             //create a new Square of the given size
             Square square = new Square(size);
@@ -58,7 +55,7 @@ public class SquareTest
                 System.out.println("It is not a magic square. ");
             }
 
-            count ++;
+            count++;
 
             //get size of next square
             size = scan.nextInt();

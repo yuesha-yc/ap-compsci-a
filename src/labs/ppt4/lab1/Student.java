@@ -7,25 +7,23 @@ package labs.ppt4.lab1;
 //   score on test 2.  Methods prompt for and read in grades,
 //   compute the average, and return a string containing student’s info.
 // ****************************************************************
+
 import java.util.Scanner;
 
 /**
  * AP-CSA Section 1 Kevin Wang
  */
-public class Student
-{
+public class Student {
+    Scanner scan = new Scanner(System.in);
     //declare instance data
-    private String name;
+    private final String name;
     private int score1;
     private int score2;
-
-    Scanner scan = new Scanner(System.in);
 
     //-----------------------------------------------
     //constructor
     //-----------------------------------------------
-    public Student(String studentName)
-    {
+    public Student(String studentName) {
         name = studentName;
     }
 
@@ -33,8 +31,7 @@ public class Student
     //inputGrades: prompt for and read in student's grades for test1 and test2.
     //Use name in prompts, e.g., "Enter's Joe's score for test1".
     //-----------------------------------------------
-    public void inputGrades()
-    {
+    public void inputGrades() {
         System.out.println("Enter " + name + "'s score for test 1");
         score1 = scan.nextInt();
         System.out.println("Enter " + name + "'s score for test 2");
@@ -45,8 +42,7 @@ public class Student
     //getAverage: compute and return the student's test average
     //-----------------------------------------------
 
-    public double getAverage()
-    {
+    public double getAverage() {
         return (double) (score1 + score2) / 2;
     }
 
@@ -54,8 +50,7 @@ public class Student
     //getName: print the student's name
     //-----------------------------------------------
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 

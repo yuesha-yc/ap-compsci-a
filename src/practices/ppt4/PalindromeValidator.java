@@ -27,9 +27,8 @@ public class PalindromeValidator {
     public boolean isPalindrome() {
 
         if (!compareFirstAndLast()) {
-             return false;
-        }
-        else if (str.length() == 1)
+            return false;
+        } else if (str.length() == 1)
             return true;
         else
             return isPalindrome();

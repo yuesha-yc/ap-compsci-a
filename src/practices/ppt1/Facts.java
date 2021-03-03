@@ -13,13 +13,11 @@ package practices.ppt1;
 //  automatic conversion of an integer to a string.
 //********************************************************************
 
-public class Facts
-{
+public class Facts {
     //-----------------------------------------------------------------
     //  Prints various facts.
     //-----------------------------------------------------------------
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Strings can be concatenated into one long string
         System.out.println("We present the following facts for your "
                 + "extracurricular edification:");

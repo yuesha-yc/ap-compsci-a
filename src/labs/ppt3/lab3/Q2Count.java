@@ -11,9 +11,8 @@ package labs.ppt3.lab3;
 
 import java.util.Scanner;
 
-public class Q2Count
-{
-    public static void main (String[] args) {
+public class Q2Count {
+    public static void main(String[] args) {
         String quitOrNot = "not";
         Scanner scan = new Scanner(System.in);
 

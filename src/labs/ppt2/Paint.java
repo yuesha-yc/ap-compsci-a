@@ -8,10 +8,8 @@ import java.util.Scanner;
  * @course AP-CSA Section 1
  * Lab 2 - Painting a Room
  */
-public class Paint
-{
-    public static void main(String[] args)
-    {
+public class Paint {
+    public static void main(String[] args) {
         //paint covers 350 sq ft/gal
         final int COVERAGE = 350;
 
