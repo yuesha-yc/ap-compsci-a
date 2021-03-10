@@ -1,4 +1,4 @@
-package practices.ppt6.studyinterface;
+package practices.ppt6.lockable;
 
 public interface Lockable {
     void setKey(int key);

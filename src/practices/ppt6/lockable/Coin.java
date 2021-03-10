@@ -1,4 +1,4 @@
-package practices.ppt6.studyinterface;
+package practices.ppt6.lockable;
 
 public class Coin implements Lockable {
     private final int HEADS = 0;
