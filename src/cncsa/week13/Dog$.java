@@ -1,10 +1,10 @@
 package cncsa.week13;
 
-public class Dog {
+public class Dog$ {
     private String name;
     private int age;
 
-    public Dog(String aName, int aAge) {
+    public Dog$(String aName, int aAge) {
         name = aName;
         age = aAge;
     }
