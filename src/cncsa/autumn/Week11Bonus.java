@@ -1,4 +1,4 @@
-package cncsa;
+package cncsa.autumn;
 
 public class Week11Bonus {
     public static void main(String[] args) {

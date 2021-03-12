@@ -1,4 +1,4 @@
-package cncsa.week13;
+package cncsa.autumn.week13;
 
 public class Dog$ {
     private String name;

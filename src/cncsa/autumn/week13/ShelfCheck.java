@@ -1,4 +1,4 @@
-package cncsa.week13;
+package cncsa.autumn.week13;
 
 public class ShelfCheck {
     public static void main(String[] args) {

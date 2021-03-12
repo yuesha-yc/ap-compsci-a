@@ -1,4 +1,4 @@
-package cncsa.week12;
+package cncsa.autumn.week12;
 
 public class RollingDice {
     public static void main(String[] args) {
