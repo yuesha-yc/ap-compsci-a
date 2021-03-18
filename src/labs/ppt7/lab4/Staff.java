@@ -12,16 +12,26 @@ public class Staff {
     // Constructor: Sets up the list of staff members.
     // -----------------------------------------------------------------
     public Staff() {
-        staffList = new StaffMember[6];
-        staffList[0] = new Executive("Sam", "123 Main Line", "555-0469", "123-45-6789", 2423.07);
+        staffList = new StaffMember[11];
+        staffList[0] = new Executive("Mr. Hatcher", "123 Main Line", "555-0469", "123-45-6789", 100000);
 
-        staffList[1] = new Employee("Carla", "456 Off Line", "555-0101", "987-65-4321", 1246.15);
-        staffList[2] = new Employee("Woody", "789 Off Rocker", "555-0000", "010-20-3040", 1169.23);
-        staffList[3] = new Hourly("Diane", "678 Fifth Ave.", "555-0690", "958-47-3625", 10.55);
-        staffList[4] = new Volunteer("Norm", "987 Suds Blvd.", "555-8374");
-        staffList[5] = new Volunteer("Cliff", "321 Duds Lane", "555-7282");
-        ((Executive) staffList[0]).awardBonus(500.00);
-        ((Hourly) staffList[3]).addHours(40);
+        staffList[1] = new Employee("Ms. Xie", "456 Off Line", "555-0101", "987-65-4321", 65000);
+        staffList[2] = new Employee("Mr. Ruppel", "789 Off Rocker", "555-0000", "010-20-3040", 45000);
+        staffList[3] = new Hourly("Mr. Niverthi", "678 Fifth Ave.", "555-0690", "958-47-3625", 10);
+        staffList[4] = new Hourly("Mr. Gokare", "678 Fifth Ave.", "555-0690", "958-47-3625", 12);
+        staffList[5] = new Commission("Mr. Pujari", "678 Fifth Ave.", "555-0690", "958-47-3625", 75000);
+        staffList[6] = new Commission("Mr. Juang", "678 Fifth Ave.", "555-0690", "958-47-3625", 125000);
+        staffList[7] = new Volunteer("Ms. McClelland", "987 Suds Blvd.", "555-8374");
+        staffList[8] = new Volunteer("Mr. Sanchez", "321 Duds Lane", "555-7282");
+        staffList[9] = new Commission("Ms. Petry", "678 Fifth Ave.", "555-0690", "958-47-3625", 85000);
+        staffList[10] = new Employee("Mr. Kevin", "678 Fifth Ave.", "555-0690", "958-47-3625", 30000);
+
+        ((Executive) staffList[0]).awardBonus(25000);
+        ((Hourly) staffList[3]).addHours(41);
+        ((Hourly) staffList[4]).addHours(38);
+        ((Commission) staffList[5]).awardCommission(1500);
+        ((Commission) staffList[6]).awardCommission(12000);
+        ((Commission) staffList[9]).awardCommission(1000);
     }
 
     //-----------------------------------------------------------------
@@ -29,6 +39,7 @@ public class Staff {
     // -----------------------------------------------------------------
     public void payday() {
         double amount;
+        System.out.println("Payroll Manager: Kevin");
         for (int count = 0; count < staffList.length; count++) {
             System.out.println(staffList[count]);
             amount = staffList[count].pay(); // polymorphic

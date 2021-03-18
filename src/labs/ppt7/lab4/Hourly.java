@@ -29,7 +29,12 @@ public class Hourly extends Employee {
     // Computes and returns the pay for this hourly employee.
     // -----------------------------------------------------------------
     public double pay() {
-        double payment = payRate * hoursWorked;
+        double payment;
+        if (hoursWorked > 40) {
+            payment = payRate * 40 + payRate * 1.5 * (hoursWorked - 40);
+        } else {
+            payment = payRate * hoursWorked;
+        }
         hoursWorked = 0;
         return payment;
     }
