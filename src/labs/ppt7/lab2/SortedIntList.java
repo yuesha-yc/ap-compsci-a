@@ -6,28 +6,25 @@ public class SortedIntList extends IntList {
     }
 
     public void add(int value) {
-        System.out.println("Number of Elements: " + numElements);
         if (numElements == list.length)
             System.out.println("Can't add, list is full");
         else {
-            int[] tempArray = list;
-            if (numElements == 0) {
-                list[numElements] = value;
-            } else {
-                for (int i = 0; i < numElements; i++) {
-                    System.out.println("Index " + i);
-                    // if new value is smaller than this num, we replace it
-                    if (value < list[i]) {
-                        // replace it
-                        list[i] = value;
-                        // put all rest values in the previous list an index later
-                        for (int j = i + 1; j < numElements; j++) {
-                            list[j] = tempArray[j - 1];
-                        }
-                        break;
-                    }
-                }
+            // Find where should we put the value
+            int location = 0, i = 0;
+            while (list[i] < value && i < numElements) {
+                location = i + 1;
+                i++;
             }
+
+            // move the right-hand side of the location up one index
+            for (i = numElements; i > location; i--) {
+                list[i] = list[i - 1];
+            }
+
+            // Put the value at the location
+            list[location] = value;
+
+            // Increment number of elements
             numElements++;
         }
     }
